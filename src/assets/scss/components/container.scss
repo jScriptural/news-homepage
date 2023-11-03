@@ -1,0 +1,10 @@
+#main {
+ // border: 1px solid black;
+  @include desktop {
+    .first-group {
+      display: grid;
+      grid: auto / 2fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+}

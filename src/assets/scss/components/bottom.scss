@@ -1,0 +1,59 @@
+
+#bottom {
+  padding: 1rem;
+  .group {
+   // border: 1px solid blue;
+    display: grid;
+    grid: auto / 1fr 2fr;
+    grid-gap: .5rem;
+    //justify-items: center;
+    //align-items: center;
+    margin:1rem 0;
+    figure {
+      height: 112px;
+      //border: 1px solid red;
+      width: 100%;
+      img {
+	height: 100%;
+      }
+    }
+    aside {
+     // border: 1px solid red;
+      //height: 100%;
+      h3 {
+	color: $grayish-blue;
+	//margin-bottom: 2rem;
+	font: {
+	  size: 1.5rem;
+	  weight: bold; 
+	}
+      }
+      h4 {
+	color: $very-dark-blue;
+	font-weight: 500;
+	//margin-bottom: ;
+      }
+      p {
+	color: $grayish-blue;
+	margin-top: 0.5rem;
+      }
+    }
+
+
+  }
+  @include desktop {
+    //border: 1px solid red;
+    display: grid;
+    grid: auto / repeat(3,1fr);
+    grid-gap: .5rem;
+    .group {
+      grid-gap: 1rem;
+      figure {
+	height: 100%;
+      }
+    }
+
+  }
+  
+}
+

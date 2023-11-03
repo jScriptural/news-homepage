@@ -1,0 +1,46 @@
+
+#middle {
+  //border: 1px solid green;
+  padding: 1.5rem 1rem;
+  main {
+    background-color: $very-dark-blue;
+    padding-bottom: 1rem;
+
+    h2 {
+      padding: 1rem;
+      color: $soft-orange;
+      //border: 1px solid orange;
+      font: {
+	size: 1.5rem;
+	weight: 500;
+      }
+    }
+    .new-item {
+      padding: 1rem 1rem 0;
+      //border: 1px solid red;
+      hr {
+	border: 0.5px solid $dark-grayish-blue;
+      }
+      h3 {
+	color: $off-white;
+	font-weight: 500;
+      }
+      p {
+	color: $grayish-blue;
+	margin-bottom: 1.2rem;
+	padding-top: 0.5rem;
+      }
+    }
+  }
+  @include desktop {
+    padding: 1.5rem 1rem 1rem;
+    main {
+      height: 100%;
+      .new-item {
+	margin-bottom: 2rem;
+      }
+
+    }
+  }
+  
+}
