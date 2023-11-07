@@ -3,7 +3,7 @@ export default function Top(){
   return (
     <section id="top">
       <div className="image"></div>
-      <div className="container">
+      <div className="container" role="region">
 	  <h1>The Bright Future of Web 3.0?</h1>
 	  <article>
 	    <p>We dive into the next evolution of the web 

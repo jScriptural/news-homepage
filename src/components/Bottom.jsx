@@ -2,7 +2,7 @@ import retroPc from "/images/image-retro-pcs.jpg";
 import topLaptops from "/images/image-top-laptops.jpg";
 import gamingGrowth from "/images/image-gaming-growth.jpg";
 
-let groups = [
+const groups = [
   {
     src: retroPc,
     alt: "retro pc",
@@ -32,9 +32,10 @@ export default function Bottom(){
   return (
     <section id="bottom">
       {groups.map((group,i)=>( 
-	<div key={i} className="group">
+	<div key={i} className="group" role="region">
 	  <figure>
 	    <img src={group.src} alt={group.alt} />
+	    <figcaption hidden={true} aria-label="hidden">{group.alt}</figcaption>
 	  </figure>
 	  <aside>
 	    <h3>{group.tag}</h3>
